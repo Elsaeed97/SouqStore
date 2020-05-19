@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Sign Up {% endblock title %}
+
+{% block content %}
+<main style="margin-top: 150px ;">
+    <div class="container mynav">
+        <h1>Create New Account</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button class="btn btn-default" type="submit">Sign Up</button>
+
+        </form>
+</div>
+</main>
+{% endblock content %}

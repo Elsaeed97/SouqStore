@@ -5,7 +5,7 @@ from django.core.paginator import Paginator
 
 def product_list(request):
      products = Product.objects.all()
-     paginator = Paginator(products, 4)
+     paginator = Paginator(products, 8)
      page_number = request.GET.get('page')
      product_list = paginator.get_page(page_number)
      context = {
